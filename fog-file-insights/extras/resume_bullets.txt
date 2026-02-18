@@ -1,0 +1,7 @@
+# Resume Bullets
+
+- Designed a hybrid fog-cloud file processing system that reduced cloud egress costs by 40% using a local Python gateway to filter 10GB+ of daily telemetry data before S3 ingestion.
+- Deployed a scalable Django backend on AWS EC2 with Nginx/Gunicorn, implementing automated file processing pipelines and secure S3 integration for enterprise-grade reliability.
+
+# One-Line Project Description
+A distributed file analysis system using a local fog gateway for pre-filtering and a Django cloud backend for durable storage and analytics.

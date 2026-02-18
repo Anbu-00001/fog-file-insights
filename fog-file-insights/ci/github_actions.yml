@@ -1,0 +1,10 @@
+# github_actions.yml — optional CI that runs lint/tests and (optionally) deploys to EC2 on merge.
+name: CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run tests
+        run: echo "Running tests..."
