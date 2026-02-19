@@ -39,4 +39,4 @@ python client/upload_client.py
 - This step intentionally stores files locally to let you test quickly before cloud deployment.
 
 
-The fog layer performs structural parsing, schema validation, and statistical sanity checks. Files that fail parsing, violate expected schema, or exceed configurable anomaly thresholds are quarantined locally and not forwarded to the cloud.
+The fog layer performs structural parsing, schema validation, and statistical sanity checks. Files that fail parsing, violate expected schema, or exceed configurable anomaly thresholds are quarantined locally and not forwarded to the cloud
