@@ -1,0 +1,47 @@
+{
+  "reason": "high_null_pct",
+  "summary": {
+    "rows": 3,
+    "columns": [
+      "id",
+      "value",
+      "ts"
+    ],
+    "null_pct_per_col": {
+      "id": 0.0,
+      "value": 100.0,
+      "ts": 0.0
+    },
+    "overall_null_pct": 0.3333,
+    "numeric_stats": {
+      "id": {
+        "count": 3.0,
+        "mean": 2.0,
+        "std": 1.0,
+        "min": 1.0,
+        "25%": 1.5,
+        "50%": 2.0,
+        "75%": 2.5,
+        "max": 3.0
+      },
+      "value": {
+        "count": 0.0,
+        "mean": NaN,
+        "std": NaN,
+        "min": NaN,
+        "25%": NaN,
+        "50%": NaN,
+        "75%": NaN,
+        "max": NaN
+      }
+    },
+    "sample_row": [
+      {
+        "id": 1,
+        "value": NaN,
+        "ts": "2025-01-01T00:00:00Z"
+      }
+    ]
+  },
+  "quarantine_path": "/home/anbu/25_class/Sem_4/hackathons/Fog_project/fog-file-insights/fog_gateway/quarantined_files/1771668854-92b8f1a17a554fb287caf0aa065e496a-sample_bad.csv"
+}

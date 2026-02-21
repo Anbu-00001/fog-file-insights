@@ -9,6 +9,10 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "dev-secret-key-for-local")
 DEBUG = os.environ.get("DJANGO_DEBUG", "True").lower() in ("1", "true", "yes")
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "localhost,127.0.0.1").split(",")
 
+# Fog auth token to validate fog -> cloud posts
+FOG_SHARED_TOKEN = "super-secret-demo-token"
+
+
 # apps
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -94,4 +98,37 @@ REST_FRAMEWORK = {
         "rest_framework.parsers.MultiPartParser",
         "rest_framework.parsers.JSONParser",
     ],
+}
+
+# -- structured logging for console (development/production friendly)
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "standard": {
+            "format": "%(asctime)s %(levelname)s [%(name)s] %(message)s"
+        },
+    },
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "standard",
+        },
+    },
+    "root": {
+        "handlers": ["console"],
+        "level": "INFO",
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["console"],
+            "level": "INFO",
+            "propagate": False,
+        },
+        "uploads": {
+            "handlers": ["console"],
+            "level": "INFO",
+            "propagate": False,
+        },
+    },
 }

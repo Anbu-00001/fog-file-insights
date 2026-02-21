@@ -1,3 +1,4 @@
+# Fog gateway configuration (simple, safe defaults)
 server:
   host: "0.0.0.0"
   port: 5000
@@ -13,10 +14,13 @@ forward:
   retry_backoff_seconds: 2
 
 auth:
+  # Shared token the fog will send to Django
   fog_token: "super-secret-demo-token"
 
 retry:
+  # how often the background retry worker wakes (seconds)
   retry_interval_seconds: 20
+  # maximum times the local pending file will be retried by the worker
   max_pending_attempts: 10
 
 storage:

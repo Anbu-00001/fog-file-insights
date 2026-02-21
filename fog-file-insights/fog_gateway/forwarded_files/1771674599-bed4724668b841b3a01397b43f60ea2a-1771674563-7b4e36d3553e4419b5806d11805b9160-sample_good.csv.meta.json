@@ -1,0 +1,15 @@
+{
+  "forwarded_response": {
+    "status": "stored",
+    "record": {
+      "id": 3,
+      "client_id": null,
+      "original_filename": "1771674563-7b4e36d3553e4419b5806d11805b9160-sample_good.csv",
+      "summary": {},
+      "s3_url": null,
+      "local_path": "/home/anbu/25_class/Sem_4/hackathons/Fog_project/fog-file-insights/django_cloud/media/uploads/1771674563-7b4e36d3553e4419b5806d11805b9160-sample_good.csv",
+      "forwarded": false,
+      "created_at": "2026-02-21T11:49:59.016175Z"
+    }
+  }
+}

@@ -38,5 +38,12 @@ python client/upload_client.py
 - To enable S3 later, set `USE_S3=1` and fill AWS_* env vars (Day 2).
 - This step intentionally stores files locally to let you test quickly before cloud deployment.
 
+<<<<<<< HEAD
 
 The fog layer performs structural parsing, schema validation, and statistical sanity checks. Files that fail parsing, violate expected schema, or exceed configurable anomaly thresholds are quarantined locally and not forwarded to the cloud
+=======
+## Verification Checklist
+- [ ] **Run Self-Test**: `cd django_cloud && python3 manage.py selftest`
+- [ ] **Test Upload Script**: `cd django_cloud && bash test_upload.sh`
+- [ ] **Health Endpoint Test**: Start the server and visit `http://127.0.0.1:8000/api/health/`
+>>>>>>> 3e8f133 (Remove virtual environment from repository)

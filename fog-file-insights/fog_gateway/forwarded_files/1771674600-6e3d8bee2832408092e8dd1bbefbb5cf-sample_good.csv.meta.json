@@ -1,0 +1,101 @@
+{
+  "forwarded_response": {
+    "status": "stored",
+    "record": {
+      "id": 4,
+      "client_id": "test1",
+      "original_filename": "sample_good.csv",
+      "summary": {
+        "rows": 3,
+        "columns": [
+          "id",
+          "value",
+          "ts"
+        ],
+        "null_pct_per_col": {
+          "id": 0.0,
+          "value": 0.0,
+          "ts": 0.0
+        },
+        "overall_null_pct": 0.0,
+        "numeric_stats": {
+          "id": {
+            "count": 3.0,
+            "mean": 2.0,
+            "std": 1.0,
+            "min": 1.0,
+            "25%": 1.5,
+            "50%": 2.0,
+            "75%": 2.5,
+            "max": 3.0
+          },
+          "value": {
+            "count": 3.0,
+            "mean": 13.033333333333333,
+            "std": 2.482606157515391,
+            "min": 11.0,
+            "25%": 11.65,
+            "50%": 12.3,
+            "75%": 14.05,
+            "max": 15.8
+          }
+        },
+        "sample_row": [
+          {
+            "id": 1,
+            "value": 12.3,
+            "ts": "2025-01-01T00:00:00Z"
+          }
+        ]
+      },
+      "s3_url": null,
+      "local_path": "/home/anbu/25_class/Sem_4/hackathons/Fog_project/fog-file-insights/django_cloud/media/uploads/sample_good_BpNDFCV.csv",
+      "forwarded": false,
+      "created_at": "2026-02-21T11:50:00.621612Z"
+    }
+  },
+  "summary": {
+    "rows": 3,
+    "columns": [
+      "id",
+      "value",
+      "ts"
+    ],
+    "null_pct_per_col": {
+      "id": 0.0,
+      "value": 0.0,
+      "ts": 0.0
+    },
+    "overall_null_pct": 0.0,
+    "numeric_stats": {
+      "id": {
+        "count": 3.0,
+        "mean": 2.0,
+        "std": 1.0,
+        "min": 1.0,
+        "25%": 1.5,
+        "50%": 2.0,
+        "75%": 2.5,
+        "max": 3.0
+      },
+      "value": {
+        "count": 3.0,
+        "mean": 13.033333333333333,
+        "std": 2.482606157515391,
+        "min": 11.0,
+        "25%": 11.65,
+        "50%": 12.3,
+        "75%": 14.05,
+        "max": 15.8
+      }
+    },
+    "sample_row": [
+      {
+        "id": 1,
+        "value": 12.3,
+        "ts": "2025-01-01T00:00:00Z"
+      }
+    ]
+  },
+  "forwarded_path": "/home/anbu/25_class/Sem_4/hackathons/Fog_project/fog-file-insights/fog_gateway/forwarded_files/1771674600-6e3d8bee2832408092e8dd1bbefbb5cf-sample_good.csv"
+}
