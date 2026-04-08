@@ -27,7 +27,7 @@ python manage.py runserver 0.0.0.0:8000
 
 5. Test with client:
 
-```bash
+```bash     
 pip install -r client/requirements.txt
 python client/upload_client.py
 ```
